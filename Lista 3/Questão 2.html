@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Questão 2</title>
+</head>
+<body>	
+	<script>
+		var mulx = function(val1){
+			var multiplica = function(val2){
+				return val1 * val2;
+			}
+			return multiplica;
+		};
+		var	mul5=mulx(5);
+		var str = mul5(2);
+		document.write("<p>"+"Valor da multiplicaçaõ: "+str+"</p>");
+		document.write("<p>"+"Closure é nome dado a uma variável de uma função interna possui uma referência a uma outra função ou variável esterna a ela, essa variável é persistente e não pode ser auterada fora da função "+"</p>");
+	</script>
+</body>
+</html>

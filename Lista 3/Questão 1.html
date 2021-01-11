@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Questão 1</title>
+</head>
+<body>
+	<script>
+		var x = 20, y = "20";
+		if(x==y){
+			document.writeln("<p>"+"a) É fracamente tipada, pois a comparação 20+'20' retorna true" +"</p>");
+		}else{
+			document.writeln("<p>"+"a) É fortemente tipada, pois a comparação 20+'20' retorna false"+"</p>");
+		}
+
+		x = 0;
+		if (x == 10){
+			document.writeln("<p>"+"x"+"</p>");
+		}else{document.writeln("<p>"+"b) No if(x == 10), não acontece nada pois o valor de 0 não é 10"+"</p>");}
+		if (x = 10){
+			document.writeln("<p>"+"No caso if(x=10), você muda o valor de x para 10 e em javascript, se uma variável for diferente de [false] [undefined] [null] [0] [''] [NaN], ela é considerada true, logo vai rodar o que estiver dentro do if"+"</p>");
+		}
+	</script>
+</body>
+</html>

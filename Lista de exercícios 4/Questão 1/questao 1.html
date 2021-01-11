@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Accordion Example </title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <script>
+         $(function() {
+            $( "#accordion-2" ).accordion({
+               collapsible: true
+            });
+         });
+      </script>
+      
+      <style>
+         #accordion-2{font-size: 14px;}
+      </style>
+   </head>
+   
+   <body>
+      <header>
+        <h1>Tudo que você precisa saber sobre Web Design</h1>
+      </header>
+
+      <div id = "accordion-2">
+         
+         <h3>>O que é Web design</h3>
+         <div id="div1" style="font-size: 16px;">
+            <h2>O que é Web design?</h2>
+            <br />
+            <p>O web design é uma extensão da prática do design gráfico, onde o foco do projeto é a criação de web sites e documentos disponíveis no ambiente da World Wide Web.<br /><br />
+
+            O web design tende à multidisciplinaridade, uma vez que a construção de páginas web requer subsídios de diversas áreas técnicas, além do design propriamente dito. Áreas como a arquitetura da informação, programação, ergonomia, usabilidade, acessibilidade entre outros.<br /><br />
+
+            A preocupação fundamental do web designer é agregar os conceitos de usabilidade e experiência do usuário ao design do site, garantindo que o usuário final atinja seus objetivos de forma agradável e intuitiva<br /><br />
+
+            Como todo trabalho de design, ele é um projeto, e necessita uma análise informacional, a partir de um briefing. Detectar corretamente o objetivo do projeto é essencial para um bom planejamento, de modo que as ações sejam tomadas de forma correta.
+          </p>
+         </div>
+         
+         <h3>Vídeo sobre Web Desing</h3>
+         <div id="div2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8xurvia7Pkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         
+          <h3>Exemplos de bons designs</h3>
+         <div id="div3" >
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x400" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x399" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x397" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x398" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x396" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x395" style="width: 100%; height: 50%;">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://source.unsplash.com/random/1280x394" style="width: 100%; height: 50%;">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+         </div>
+         
+         <h3>Sobre</h3>
+         <div class="div4">
+            <div id="divf">
+              <img src="01.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+              <h1>Sobre</h1>
+              </br>
+              <p>Programador, entusiasta tecnológico, atualmente cursando Sistemas e Mídias Digitais</p>
+            </div>
+         </div>
+      </div>
+      
+      <footer style="font-size: 10px">
+        <p>Posted by: Antonio Lucas</p>
+        <p>Contact information: <a href="mailto:antoniolucasmateus@gmail.com">
+        antoniolucasmateus@gmail.com</a>.</p>
+      </footer>
+
+      <script src="questao 1.js"></script>
+   </body>
+</html>

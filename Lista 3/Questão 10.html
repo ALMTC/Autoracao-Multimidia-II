@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questão 10</title>
+</head>
+<body>
+	<svg height="700px" width="100%">
+  		<circle id="circ" cx="2%" cy="0px" r="4%" stroke="black" stroke-width="3" fill="red" />
+	</svg>
+	<button type="button" onclick="move()"></button>
+	<script>
+		var pX = 0, pY = -25;
+		var repeater;
+		function move(){
+			if (pX <=100) {
+				pX+=0.5;
+			}else{
+				pX = 0;
+			}
+			if (pY <=725) {
+				pY+=7;
+			}else{
+				pY = -25;
+			}
+			var x = document.getElementById('circ');
+			x.style.cx = pX+"%";
+			x.style.cy = pY+"px";
+			repeater = setTimeout(move, 50);
+		}
+		move();
+	</script>
+</body>
+</html>

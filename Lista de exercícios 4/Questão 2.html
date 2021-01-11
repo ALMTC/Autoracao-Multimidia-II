@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang = "pt-br">
+   <head>
+      <meta charset = "utf-8">
+      <title>Questão 2</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <script>
+         $(function() {
+          var aFontsSizeArray = new Array('5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '24', '26', '28', '30', '33', '36', '39', '42', '45', '48', '55', '65', '75', '85', '95', '110', '130', '150');
+          $('#slider').slider({
+              value: 7,
+              min: 1,
+              max: 35,
+              step: 1,
+              slide: function(event, ui) {
+                  var sFontSizeArray = aFontsSizeArray[ui.value];
+                  $('#font_size').val(sFontSizeArray + ' px');
+                  $('.textBox').css('font-size', sFontSizeArray + 'px');
+              }
+          });
+          $('#font_size').val((aFontsSizeArray[$('#slider').slider('value')]) + ' px');
+      });
+      </script>
+   </head>
+   
+   <body>
+      <div id="slider"></div>
+      <input type="text" id="font_size" style="border:0; color:#222; font-weight:bold;" />
+
+      <div class="textBox">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque consectetur quis esse autem omnis nesciunt, sunt nemo ducimus adipisci.</div>
+   </body>
+</html>

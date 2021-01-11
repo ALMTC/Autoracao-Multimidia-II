@@ -1,0 +1,18 @@
+O input type="date" pode definir a data inicial, exibir um conjunto de datas específicas para o usuário selecionar, definir um linite entre as datas e permintir a seleção de apenas dias da semana específicos, mas possui algumas limitações, sendo elas:
+1 - você não pode fazer modificações significativas no calendário.
+2 - seu modo de exibição é sempre o mesmo.
+3 - o usuário pode colocar caracteres inválido, sendo nescessário fazer uma verificação antes de processar os dados
+
+Já o Datepicker além de possuir todos as boas caracteríticas do type="date", ainda possui uma grande variedade de calendários base com funções diferentes, como apresentados o próprio site do jQuery UI, além de ser possível fazer uma costumização quase que completa no seu leyout. Como alguns exemplos de features dele temos:
+1 - várias animações para quando o calendário aparece.
+2 - Uma versão que não exibe a caixa de imput.
+3 - botões na própria interface do calendário;
+3 - Menus para selecionar o mês e ano mais facilmente.
+4 - Facilmente mudar o formato de exibição da data.
+5 - É possível criar ícones para abrir o menu ao invés de simplesmente abrir quando clicado.
+6 - Mudar a linguagem do calendário.
+7 - Colocar uma saída da data por extenso.
+8 - mudar o dia inicial da semana.
+9 - impede que o usuário use caracteres que não sejam números.
+
+Ainda existem outras vantagem, mas essas são as principais.

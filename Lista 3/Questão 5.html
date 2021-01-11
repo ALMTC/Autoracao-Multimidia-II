@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questão 5</title>
+	<style>
+		#divi{
+			width: 1600px;
+			height: 900px;
+		}
+		#quad{
+			width: 1600px;
+			height: 900px;
+			background-color: #888888;
+		}
+	</style>
+</head>
+<body>
+	<div id="divi">
+		<canvas id	="quad"></canvas>
+	</div>
+	<script>
+		var posX = 0;
+		var posY = 0;
+		document.onkeydown = function(e) {
+    		switch (e.keyCode) {
+        		case 37:
+            		move('left');
+           		break;
+        		case 38:
+            		move('up');
+            	break;
+        		case 39:
+            		move('right');
+            	break;
+        		case 40:
+            		move('down');
+            	break;
+    		}
+		};
+		function move(val){
+			
+			if (val === 'left') {
+				if (posX > 0) {posX -= 5;}
+			}
+			else if (val === "right"){
+				if (posX < 275) {posX += 5;}
+			}
+			else if (val === "up"){
+				if (posY > 0) {posY -= 5;}
+			}
+			else if (val === "down"){
+				if (posY < 125) {posY += 5;}
+			}
+			var c = document.getElementById("quad");
+			var ctx = c.getContext("2d");
+			ctx.clearRect(0, 0, c.width, c.height);
+			ctx.beginPath();
+			ctx.rect(posX, posY, 25, 25);
+			ctx.fillStyle = "red";
+			ctx.fill();
+		}
+	</script>
+</body>
+</html>
