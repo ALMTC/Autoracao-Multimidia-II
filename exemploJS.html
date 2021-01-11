@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Visão geral do JavaScript</title>	
+</head>
+<body>
+	<label for="Clima">Selecione o clima</label>
+	<select id="Clima">
+		<option value="">--Faça sua escolha--</option>
+		<option value="sunny">Ensolarado</option>
+		<option value="rainy">Chuvoso</option>
+		<option value="snowing">Com Neve</option>
+		<option value="overcast">Nublado</option>
+	</select>
+<p id="aaa"></p>
+
+<script>
+var select = document.querySelector("select");;
+var para = document.getElementById("aaa")//document.querySelector("p");
+
+select.addEventListener("change", setWeather);
+
+function setWeather(){
+	var choice = select.value;
+		//alert(para.textContent);
+	if (choice === "sunny") {
+		para.textContent = "Está Ensolarado";
+	} else if (choice === "rainy") {
+		para.textContent = "Está chovendo";
+	} else if (choice === "snowing") {
+		para.textContent = "Está nevando";
+	} else if (choice === "overcast") {
+		para.textContent = "Está Nublado";
+	} else {
+		para.textContent = "";
+	}
+}
+</script>
+</body>
+</html>

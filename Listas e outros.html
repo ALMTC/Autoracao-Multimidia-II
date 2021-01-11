@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Vamos aprender um pouco sobre a linguagem JavaScript</h1>
+	<script>
+		//Tipos de dados
+		var num=10;
+		var str=num.toString();
+		document.writeln("<p>"+str+"</p>");
+
+		var num = parseInt(str);
+		a = 10+num;
+		document.write("<p>Valor da soma é:" + a + "</p");
+
+	//======================================================
+
+		document.writeln("<p> Vamos usar vetores agora!</p>");
+		var vetor = new Array;
+		var vetor2 = [1,2,3,4,5,6,7,8,9,10];
+		vetor = ["Primeiro", "Segundo", "Terceiro", 10, 20];
+
+		for(i=1; i < vetor.length; i++){
+			document.write(vetor[i]+"<br/>");
+		}
+
+		//Objeto
+		var obj = {a: 1, b: 2, c: 3};
+
+		//Para prop (propiedade) in obj faça
+		for (var prop in obj) {
+			//ctrl+shift+k
+			console.log("obj." + prop + "=" + obj[prop]);
+			document.write("obj." + prop + "=" + obj[prop]);
+		}
+
+		vetor2 = vetor2.push(12);
+		console.log(vetor2);
+
+	//======================================================
+
+		var vegetais = ['Repolho', 'Nabo', 'Rabanete', 'Cenoura'];
+		//['Repolho', 'Nabo', 'Rabanete', 'Cenoura']
+
+		var pos = 1, n = 2;
+		var itensRemovidos = vegetais.splice(pos, n);
+		//n é o número de itens removidos
+		//pos é a posição inicial
+
+		console.log(vegetais);
+		console.log(itensRemovidos);
+
+	//======================================================
+	</script>
+</body>
+</html>
